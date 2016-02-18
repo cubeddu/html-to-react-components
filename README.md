@@ -1,18 +1,6 @@
 <img src="logo.png" width="260" alt="Logo" />
 
-<a href="https://travis-ci.org/roman01la/html-to-react-components">
-  <img src="https://img.shields.io/travis/roman01la/html-to-react-components.svg?style=flat-square" />
-</a>
-<a href="https://www.npmjs.com/package/html-to-react-components">
-  <img src="https://img.shields.io/npm/v/html-to-react-components.svg?style=flat-square" />
-</a>
-<a href="https://coveralls.io/github/roman01la/html-to-react-components">
-  <img src="https://img.shields.io/coveralls/roman01la/html-to-react-components.svg?style=flat-square" />
-</a>
-
 Extract annotated portions of HTML into React components as separate modules. The structure of HTML is preserved by importing child components and replacing appropriate pieces of HTML with them. As a result you get an entire components tree ready to be rendered.
-
-![usage example animation](sample.gif)
 
 ## When to use it
 
@@ -93,7 +81,7 @@ Disable writing to disk by setting the `NO_WRITE_FS` environment variable:
 NO_WRITE_FS=true browserify ...
 ```
 
-Alternatively, if you're using [`envify`](https://github.com/hughsk/envify);
+
 
 ```
 browserify in.js -g [ envify --NO_WRITE_FS ] ...
@@ -155,14 +143,6 @@ Default is `components` directory in the current directory.
 Output files extension.
 
 Default value is `js`.
-
-## Resources
-
-A quick [video demo](https://www.youtube.com/embed/Cd8cNLfGcVo) on converting a simple HTML page into React components and rendering them into the same looking UI.
-
-Annotating HTML in the editor is not the best experience, because you cannot see rendered UI itself. It's possible to annotate HTML using DevTools. Be aware that you'll have to spend time on copying and pasting markup from DevTools into files which will be processed.
-
-![usage example with DevTools animation](https://giant.gfycat.com/ShockingDefiantBobcat.gif)
 
 ### Browser extension
 [extract-to-react](https://github.com/jesstelford/extract-to-react) is an extension for Chrome and Chromium browsers built on top of *html-to-react-components* which allows you to extract HTML and CSS into React components and load them in CodePen or JSFiddle.
